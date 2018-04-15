@@ -62,29 +62,29 @@ public class SalesReporter { // Declare the class SalesReporter
 	/**
 	 * This method let user input the information of salesman as the number of salesman
 	 */
-	public void getData() { 
-		team = new Salesman[numOfSalesman]; 
-		Scanner myScanner = new Scanner(System.in); 
+	public void getData() {  //declare getData to input data into private information
+		team = new Salesman[numOfSalesman]; 	//input the number Of Salesman into Salesman
+		Scanner myScanner = new Scanner(System.in);  //reference variable to input data
 
 
-		for(int i=0; i<numOfSalesman; i++) { 
+		for(int i=0; i<numOfSalesman; i++) {   //repetition to get data from user
 
-			System.out.println("Enter data for associate number"+(i+1)); 
+			System.out.println("Enter data for associate number"+(i+1));   // print the associate number of salesman on console
 
-			System.out.println("Enter name:"); 
-			String name = myScanner.nextLine(); 
+			System.out.println("Enter name:"); //to show the statement on console 
+			String name = myScanner.nextLine(); //get data from user
 
-			System.out.println("Enter Sales:");
-			Double sales = myScanner.nextDouble(); 
+			System.out.println("Enter Sales:"); //to show the statement on console 
+			Double sales = myScanner.nextDouble();  //get data from user
 			
-			myScanner.skip("\\r\n"); 
+			myScanner.skip("\\r\n");  //use this statement to remove the white spaces
 
-			Salesman mySalesman = new Salesman(); 
+			Salesman mySalesman = new Salesman(); //Declare the reference of the class Salesman
 
-			mySalesman.setmName(name);	
-			mySalesman.setSales(sales); 
+			mySalesman.setmName(name);	//input the data to setName(name)
+			mySalesman.setSales(sales); //input the data to setSales(sales)
 
-			team[i] = mySalesman;
+			team[i] = mySalesman; //input the number of salesman
 			
 		}
 
@@ -153,6 +153,7 @@ public class SalesReporter { // Declare the class SalesReporter
 	}
 
 }
+
 
 
 
