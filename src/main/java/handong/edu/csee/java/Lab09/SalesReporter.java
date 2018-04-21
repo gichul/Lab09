@@ -16,8 +16,8 @@ public class SalesReporter { // Declare the class SalesReporter
 
 	private double sales;  //Declare the Sales to double type
 	private int numOfSalesman; //Declare the numOfSalesman to int type
-	private Salesman[] team; //Declare the Sales to array type
-
+	
+	ArrayList<Salesman> team;
 	/**
 	 * this is constructor of SalesReporter, and input the number of salesman
 	 */
